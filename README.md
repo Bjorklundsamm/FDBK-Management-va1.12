@@ -21,7 +21,7 @@ Modal/Overlay system designed to allow users to quickly take in a high level ove
 1. [Usage](#Usage)
 1. [Requirements](#requirements)
 1. [Development](#development)
-1. [Product Demo](#Product)
+1. [Product Demo](#demo)
 
 ## Usage
 
@@ -32,14 +32,14 @@ Modal/Overlay system designed to allow users to quickly take in a high level ove
 npm install
 npm run db:setup
 ```
-- Now run the following commands to initialize your instance(currently configured to localhost:3003):
+- Run the following commands to initialize your instance(currently configured to localhost:3003):
 ```sh
 npm start
 npm run watch
 ```
 On successfull start expect message: `Service running on PORT#`
 
-On failure please inspect the message beginning at line: `UNABLE TO START:`
+On failure please inspect the message beginning at line: `-UNABLE TO START-`
 
 ## Requirements
 
@@ -134,21 +134,23 @@ On failure please inspect the message beginning at line: `UNABLE TO START:`
 **Path Parameters:** `product:id - review:id`
 
 **Returns:**
-``Successful DELETE response(206``
+``Successful DELETE response(206)``
 
 ### Page-load and response times
 Recorded via loaderIO and NewRelic. Tested using 21,000,000 instances of staged data via FakerJS.
 
--[x] Exceed 1750 Requests per minute
--[x] Greater than 99.9% Successful Response rate
--[x] Average response times below 200ms
--[x] Page-load and component rendering times below 600ms
--[ ] Database de-normalized and re-factored to CQL
+- [x] Exceed 1750 Requests per minute
+- [x] Greater than 99.9% Successful Response rate
+- [x] Average response times below 200ms
+- [x] Page-load and component rendering times below 600ms
+- [ ] Database de-normalized and re-factored to CQL
 
 ![stats](https://user-images.githubusercontent.com/68446801/110518059-7f22df00-80c0-11eb-8b3b-01de5dc4c273.png)
 
-## Product Demo
+## Demo
 ---------
+*All hosted instances of product have been terminated upon project completion. For live demos or walkthroughs please contact the libraFX team-leader at https://github.com/bjorklundsamm*
+
 ![reviews](https://user-images.githubusercontent.com/68446801/110518677-3cadd200-80c1-11eb-9711-adc0b6ccb89f.gif)
 
 -----------
