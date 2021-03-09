@@ -51,7 +51,7 @@ On failure please inspect the message beginning at line: `UNABLE TO START:`
     {
       product_id: INT
       product_url: VARCHAR
-      product_reviews: [collection]
+      product_reviews: [cluster]
     }
   Reviews
     {
@@ -60,7 +60,7 @@ On failure please inspect the message beginning at line: `UNABLE TO START:`
       email: VARCHAR
       review_header: TEXT
       review_body: TEXT
-      review_properties: [collection]
+      review_properties: {collection}
       createdAt: DATE
      }
   Review Properties
@@ -84,7 +84,7 @@ On failure please inspect the message beginning at line: `UNABLE TO START:`
 ```json
   {
     product_id: INT
-    reviews: [collection]
+    reviews: [cluster]
   }
 ```
 
