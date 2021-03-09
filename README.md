@@ -2,7 +2,7 @@
 ## End User Feedback Management System
 
 
-##Description
+## Description
 ----
 Modal/Overlay system designed to allow users to quickly take in a high level overview of a product, access reviews of other users, and offer personalized feedback. Created using React, Express, Node, Styled Components, and Material UI. Compiled using Webpack and Babel following the AirBnB style preset for ESLint. Has not yet been optimized for scalability but has passed all preliminary tests for interacting with massive stores of instanced data using Mongoose.
 
@@ -23,7 +23,7 @@ Modal/Overlay system designed to allow users to quickly take in a high level ove
 
 - Fork repo and pull latest version to local machine or hosted instance.
 - Navigate to the root directory of the repo.
-- Run the following commands **BEFORE** initializing produce _(Administrative or Super-user rights may be required)_
+- Run the following commands **BEFORE** initializing product _(Administrative or Super-user rights may be required)_
 ```sh
 npm install
 npm run db:setup
@@ -34,6 +34,7 @@ npm start
 npm run watch
 ```
 On successfull start expect message: `Service running on PORT#`
+
 On failure please inspect the message beginning at line: `UNABLE TO START:`
 
 ## Requirements
