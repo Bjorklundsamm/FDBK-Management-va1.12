@@ -1,7 +1,7 @@
 ![Thumbnail](https://user-images.githubusercontent.com/68446801/110518869-87c7e500-80c1-11eb-8b8c-96c7269eef7c.jpg)
 
 # FJORDS by LibraFX
-## End User Feedback Management System
+## End User Feedback Management System _*Legacy*_
 >All designs and developments by Samuel Bjorklund
 
 
