@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import $ from 'jquery';
 import { StatStyles } from '../StyledComponents/StatsStyles';
+import FadeIn from '../animations/FadeIn';
+import StatBubble from './StatBubble';
 
 // Styles
 const {
@@ -45,7 +47,9 @@ class RatingStats extends React.Component {
     if (view === 'stats') {
       return (
         <div>
-          <SpeechBubble />
+          <FadeIn>
+            <StatBubble />
+          </FadeIn>
         </div>
       );
     }

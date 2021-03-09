@@ -14,8 +14,8 @@ const fadeIn = keyframes`
 `;
 
 const FadeIn = ({
-  duration = 300,
-  delay = 0,
+  duration = 500,
+  delay = 0.25,
   children,
   ...delegated
 }) => (

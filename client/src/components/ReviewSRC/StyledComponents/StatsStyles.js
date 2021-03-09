@@ -8,11 +8,13 @@ export const StatStyles = {
       border: 1px solid #c8c8c8;
       border-radius: 10px;
       width: 325px;
-      height: 200px;
+      height: 185px;
       text-align: center;
       padding: 20px;
       position: absolute;
       margin: -250px 0 0 -175px;
+      display: flex;
+      flex-direction: column;
     `,
     BottomArrow: styled.div`
       border-style: solid;
@@ -33,6 +35,11 @@ export const StatStyles = {
         left: -7px;
       }
     `,
+    RatingBarContainer: styled.div`
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 8px;
+    `,
   },
   StatContent: {
     QuestionIcon: styled.a`
@@ -49,6 +56,29 @@ export const StatStyles = {
       outline: none;
       cursor: pointer;
       color: #000000
+  `,
+    StarsText: styled.h1`
+      font-family: 'Roboto', Sans Serif;
+      font-size: 24px;
+      color: #000000;
+      margin: 0;
+      padding: 0;
+      display: none;
+    `,
+    StarsBar: styled.div`
+      height: 12px;
+      background-color: #000000;
+      margin: 10px 0 0 10px;
+      display: none;
+    `,
+    Count: styled.div`
+      align-items: center;
+      color: #999999;
+      font-size: 10px;
+      font-weight: 700;
+      text-align: left;
+      margin-top: 10px;
+      display: none;
   `,
   },
 };
