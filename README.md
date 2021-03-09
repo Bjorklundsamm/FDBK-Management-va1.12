@@ -157,6 +157,12 @@ See Reviews | Write Reviews
 -----|------
 ![see-reviews](https://user-images.githubusercontent.com/68446801/110518696-420b1c80-80c1-11eb-9da6-01ce49539758.gif) | ![write-review](https://user-images.githubusercontent.com/68446801/110518706-46cfd080-80c1-11eb-8790-da671f90a43e.gif)
 
+### Libraries Used
+- Dependencies
+> Axios, Cors, Express, FakerJS, jQuery, Moment(retired), Prop-types, React/-dom/-paginate, Styled-Components
+- Dev-Dependencies
+> Babel, ESLint, Jest, Nodemon, Webpack/-compression
+
 
 
 
