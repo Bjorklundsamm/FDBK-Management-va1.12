@@ -1,5 +1,8 @@
+![Thumbnail](https://user-images.githubusercontent.com/68446801/110518869-87c7e500-80c1-11eb-8b8c-96c7269eef7c.jpg)
+
 # FJORDS by LibraFX
 ## End User Feedback Management System
+>All designs and developments by Samuel Bjorklund
 
 
 ## Description
@@ -18,6 +21,7 @@ Modal/Overlay system designed to allow users to quickly take in a high level ove
 1. [Usage](#Usage)
 1. [Requirements](#requirements)
 1. [Development](#development)
+1. [Product Demo](#Product)
 
 ## Usage
 
@@ -41,7 +45,7 @@ On failure please inspect the message beginning at line: `UNABLE TO START:`
 
 - Node v6.13.0+ 
 - Mongo DB v4.1+
-- NVM / NPM
+- Terminal Access
 
 ## Development
 
@@ -74,7 +78,7 @@ On failure please inspect the message beginning at line: `UNABLE TO START:`
       
 ```
 
-### API Requests
+### User API Requests
 
 -GET `/api/product:id/reviews`
 
@@ -89,6 +93,72 @@ On failure please inspect the message beginning at line: `UNABLE TO START:`
 ```
 
 -POST `api/product:id/reviews`
+
+**Success Status Code:** `201`
+**Path Parameters:** `product:id`
+
+**Request Body:**
+```json
+  {
+    author: TEXT
+    email: VARCHAR
+    review_header: TEXT
+    review_body: TEXT
+    review_properties: {
+     rating: FLOAT
+     recommended: BOOLEAN
+     size: TEXT
+     fit: TEXT
+     usage: {
+       casual: BOOLEAN
+       climbing: BOOLEAN
+       hiking: BOOLEAN
+       yoga: BOOLEAN
+       running: BOOLEAN
+       biking: BOOLEAN
+       snow: BOOLEAN
+       surfing: BOOLEAN
+       work: BOOLEAN
+       }
+     }
+```
+
+**Returns:**
+``Successful POST response(201)``
+
+### Dev only API Requests
+
+-DELETE `api/product:id/reviews/review:id`
+
+**Success Status Code:** `206`
+**Path Parameters:** `product:id - review:id`
+
+**Returns:**
+``Successful DELETE response(206``
+
+### Page-load and response times
+Recorded via loaderIO and NewRelic. Tested using 21,000,000 instances of staged data via FakerJS.
+
+-[x] Exceed 1750 Requests per minute
+-[x] Greater than 99.9% Successful Response rate
+-[x] Average response times below 200ms
+-[x] Page-load and component rendering times below 600ms
+-[ ] Database de-normalized and re-factored to CQL
+
+![stats](https://user-images.githubusercontent.com/68446801/110518059-7f22df00-80c0-11eb-8b3b-01de5dc4c273.png)
+
+## Product Demo
+---------
+![reviews](https://user-images.githubusercontent.com/68446801/110518677-3cadd200-80c1-11eb-9711-adc0b6ccb89f.gif)
+
+-----------
+![see-reviews](https://user-images.githubusercontent.com/68446801/110518696-420b1c80-80c1-11eb-9da6-01ce49539758.gif) | ![write-review](https://user-images.githubusercontent.com/68446801/110518706-46cfd080-80c1-11eb-8790-da671f90a43e.gif)
+
+
+
+
+
+    
 
 
 
