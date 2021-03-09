@@ -1,7 +1,7 @@
 ![Thumbnail](https://user-images.githubusercontent.com/68446801/110518869-87c7e500-80c1-11eb-8b8c-96c7269eef7c.jpg)
 
 # FJORDS by LibraFX
-## End User Feedback Management System _*Legacy*_
+## End User Feedback Management System _* Legacy *_
 >All designs and developments by Samuel Bjorklund
 
 
@@ -153,7 +153,8 @@ Recorded via loaderIO and NewRelic. Tested using 21,000,000 instances of staged 
 
 ![reviews](https://user-images.githubusercontent.com/68446801/110518677-3cadd200-80c1-11eb-9711-adc0b6ccb89f.gif)
 
------------
+See Reviews | Write Reviews
+-----|------
 ![see-reviews](https://user-images.githubusercontent.com/68446801/110518696-420b1c80-80c1-11eb-9da6-01ce49539758.gif) | ![write-review](https://user-images.githubusercontent.com/68446801/110518706-46cfd080-80c1-11eb-8790-da671f90a43e.gif)
 
 
